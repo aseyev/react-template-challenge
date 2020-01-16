@@ -1,25 +1,24 @@
 {
   "files": {
-    "main.css": "/react-template-challenge/static/css/main.4f22b965.chunk.css",
-    "main.js": "/react-template-challenge/static/js/main.b5dd004b.chunk.js",
-    "main.js.map": "/react-template-challenge/static/js/main.b5dd004b.chunk.js.map",
+    "main.css": "/react-template-challenge/static/css/main.526489fe.chunk.css",
+    "main.js": "/react-template-challenge/static/js/main.e0404d11.chunk.js",
+    "main.js.map": "/react-template-challenge/static/js/main.e0404d11.chunk.js.map",
     "runtime-main.js": "/react-template-challenge/static/js/runtime-main.2c1de777.js",
     "runtime-main.js.map": "/react-template-challenge/static/js/runtime-main.2c1de777.js.map",
-    "static/js/2.8d9b226a.chunk.js": "/react-template-challenge/static/js/2.8d9b226a.chunk.js",
-    "static/js/2.8d9b226a.chunk.js.map": "/react-template-challenge/static/js/2.8d9b226a.chunk.js.map",
+    "static/js/2.dcb5ed4e.chunk.js": "/react-template-challenge/static/js/2.dcb5ed4e.chunk.js",
+    "static/js/2.dcb5ed4e.chunk.js.map": "/react-template-challenge/static/js/2.dcb5ed4e.chunk.js.map",
     "index.html": "/react-template-challenge/index.html",
-    "precache-manifest.34eb15ffb4dd972ae69d2c1d4e155b12.js": "/react-template-challenge/precache-manifest.34eb15ffb4dd972ae69d2c1d4e155b12.js",
+    "precache-manifest.52439b9fd247c39e86b617d047ac3297.js": "/react-template-challenge/precache-manifest.52439b9fd247c39e86b617d047ac3297.js",
     "service-worker.js": "/react-template-challenge/service-worker.js",
-    "static/css/main.4f22b965.chunk.css.map": "/react-template-challenge/static/css/main.4f22b965.chunk.css.map",
-    "static/js/2.8d9b226a.chunk.js.LICENSE": "/react-template-challenge/static/js/2.8d9b226a.chunk.js.LICENSE",
-    "static/media/320×240.jpg": "/react-template-challenge/static/media/320×240.eec8ba1c.jpg",
+    "static/css/main.526489fe.chunk.css.map": "/react-template-challenge/static/css/main.526489fe.chunk.css.map",
+    "static/js/2.dcb5ed4e.chunk.js.LICENSE": "/react-template-challenge/static/js/2.dcb5ed4e.chunk.js.LICENSE",
     "static/media/circlesСircle.svg": "/react-template-challenge/static/media/circlesСircle.78eb393d.svg",
     "static/media/mockup-card.jpg": "/react-template-challenge/static/media/mockup-card.9c3e8757.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2c1de777.js",
-    "static/js/2.8d9b226a.chunk.js",
-    "static/css/main.4f22b965.chunk.css",
-    "static/js/main.b5dd004b.chunk.js"
+    "static/js/2.dcb5ed4e.chunk.js",
+    "static/css/main.526489fe.chunk.css",
+    "static/js/main.e0404d11.chunk.js"
   ]
 }
