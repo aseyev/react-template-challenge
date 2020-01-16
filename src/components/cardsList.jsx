@@ -9,7 +9,7 @@ let CardsList = (props) => {
 
     return <div className={s.cards_list}>
         <Card props={props}/>
-        <Card/>
+        <CardTest />
         <CardTest/>
         <CardTest/>
         <CardTest/>

@@ -4,16 +4,16 @@ import mockup from '../img/320×240.jpg';
 
 let Card = (props) => {
 
-    let data = props.props;
+    let data = props.props.props;
 
-    console.log(data);
+    console.log(data[0]);
 
     return <div className={s.card}>
         <div className={s.img_block}>
             <img className={s.img} src={mockup} alt="logo" />
         </div>
         <div className={s.title}>
-            {/* {data[1]} */}
+            {data[0].title}
         </div>
         <div className={s.date_from}>
             date

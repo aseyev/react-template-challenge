@@ -3,7 +3,7 @@ import Paginator from './paginator';
 import Header from './header';
 import CardsList from './cardsList';
 import s from './page.module.css';
-// import data from './list.json';
+import PreloaderCircle from "./PreloaderCircle";
 
 export class PageWrapper extends React.Component {
 
@@ -36,7 +36,10 @@ export class PageWrapper extends React.Component {
     }
 
     render() {
-        
+        if ( !this.state.isLoaded ) {
+            return <PreloaderCircle />
+        }
+
         console.log(this.state);
 
         return <div className={s.page_wrapper}>

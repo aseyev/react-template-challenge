@@ -105,3 +105,10 @@
     background-color: grey;
     color: white;
 }
+.preloader_position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 100%;
+}
