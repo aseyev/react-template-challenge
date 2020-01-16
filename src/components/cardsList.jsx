@@ -5,7 +5,7 @@ import CardTest from './cardTest';
 
 let CardsList = (props) => {
 
-    // console.log(data);
+    console.log(props);
 
     return <div className={s.cards_list}>
         <Card props={props}/>
