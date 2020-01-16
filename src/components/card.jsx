@@ -5,26 +5,39 @@ let Card = (props) => {
 
     let data = props.props;
 
-    let Picture = (props) => {
-        return <div className={s.img_block}>
-            <img className={s.img} src={props.props} alt="loading" />
-        </div>
-    }
-
     return <div className={s.card}>
+
         <Picture props={data.image_url} />
+
         <div className={s.title}>
             {data.title}
         </div>
-        <div className={s.date_from}>
-            {data.created_at}
-        </div>
+
+        <TimePassed props={data.created_at} />
+
         <StarRating props={data.vote} />
+
         <div className={s.price}>
             {data.price}
         </div>
-    </div>
 
+    </div>
+}
+let Picture = (props) => {
+    return <div className={s.img_block}>
+        <img className={s.img} src={props.props} alt="loading" />
+    </div>
+}
+
+let TimePassed = (props) => {
+    let data = props.props;
+    let now = new Date();
+    let fromJson = new Date(data);
+    const diffDays = Math.floor((now - fromJson)/86400000);
+    
+    return <div className={s.date_from}>
+        {`Posted ${diffDays} Days ago`}
+    </div>
 }
 
 let StarRating = (props) => {
@@ -37,6 +50,5 @@ let StarRating = (props) => {
         {stars}
     </div>
 }
-
 
 export default Card;
