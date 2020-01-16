@@ -4,23 +4,12 @@ import Card from './card';
 import CardTest from './cardTest';
 
 let CardsList = (props) => {
-
-    console.log(props);
+    let data=props.props;
+    let  cardsListing = data.map(p => <Card props={p} />);
 
     return <div className={s.cards_list}>
-        <Card props={props}/>
-        <CardTest />
         <CardTest/>
-        <CardTest/>
-        <CardTest/>
-        <CardTest/>
-        <CardTest/>
-        <CardTest/>
-        <CardTest/>
-        <CardTest/>
-        <CardTest/>
-        <CardTest/>
-        
+        {cardsListing}
     </div>
     
 }

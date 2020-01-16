@@ -34,7 +34,7 @@
 /* SINGLE CARD STYLES */
 .card {
     border: 1px solid red;
-    padding: 15px;
+    padding: 1.5vw;
     flex: 0 1 25%;
     display: grid;
     grid-template-areas:
@@ -43,54 +43,61 @@
         "date"
         "rate"
         "price";
-    grid-template-rows: 11fr 3fr 1fr 1.5fr 1fr;
+    grid-template-rows: 10fr 2fr 1fr 1.2fr 1.5fr;
+    /* grid-template-rows: 55% 15% 5% 10% 5%; */
     grid-template-columns: 1fr;
 }
 
 .img_block {
     border: 1px solid red;
-    margin: 5px;
+    margin-bottom: 20px;
     grid-area: pic;
 }
 .img_block img{
     height: 100%;
     object-fit: cover;
 }
+.title, .date_from, .rating, .price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
 
 .title {
-    border: 1px solid red;
-    margin: 5px;
     grid-area: title;
 }
 
 .date_from {
-    border: 1px solid red;
-    margin: 5px;
     grid-area: date;
 
 }
 
 .rating {
-    border: 1px solid red;
-    margin: 5px;
     grid-area: rate;
-
+    font-size: 2vw;
 }
-
+.red {
+    color: red;
+}
+.gray {
+    color: gray;
+}
 .price {
-    border: 1px solid red;
-    margin: 5px;
     grid-area: price;
 }
 
 /* PAGINATION STYLES */
 .paginator {
     margin: 5px;
+    display: flex;
+    justify-content: center;
 }
 .button,
 .button_current,
 .button_next {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 3vw;
     height: 3vw;
     margin: 5px;
