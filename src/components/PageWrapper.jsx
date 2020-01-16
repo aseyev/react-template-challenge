@@ -40,7 +40,6 @@ export class PageWrapper extends React.Component {
         created_at: "2018-12-08 17:01:15"
     };
     render() {
-        alert(this.state.items);
         return <div className={s.page_wrapper}>
             <Header />
             <CardsList props={this.initialState} />
