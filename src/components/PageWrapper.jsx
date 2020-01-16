@@ -3,6 +3,7 @@ import Paginator from './paginator';
 import Header from './header';
 import CardsList from './cardsList';
 import s from './page.module.css';
+import data from './list.json';
 
 export class PageWrapper extends React.Component {
 
@@ -36,10 +37,12 @@ export class PageWrapper extends React.Component {
 
     render() {
         
-        console.log(this.state)
+        console.log(data[0]);
+        // console.log(this.state);
+
         return <div className={s.page_wrapper}>
             <Header />
-            <CardsList />
+            <CardsList props={data}/>
             <Paginator />
         </div>
     }
