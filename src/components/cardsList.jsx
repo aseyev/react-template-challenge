@@ -1,15 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './page.module.css';
 import Card from './card';
 import CardTest from './cardTest';
 
 let CardsList = (props) => {
-    const [data, setData] = useState(props.props);
 
     // console.log(data);
 
     return <div className={s.cards_list}>
-        <Card props={data}/>
+        <Card props={props}/>
         <Card/>
         <CardTest/>
         <CardTest/>

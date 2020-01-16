@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import s from './page.module.css';
 import mockup from '../img/320×240.jpg';
 
 let Card = (props) => {
-    const [data, setData] = useState(props);
 
-    console.log(data[0]);
+    console.log(props);
 
     return <div className={s.card}>
         <div className={s.img_block}>

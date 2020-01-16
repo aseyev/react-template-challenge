@@ -12,18 +12,19 @@ export class PageWrapper extends React.Component {
         this.state = {
             error: null,
             isLoaded: false,
-            items: ""
+            items: []
         };
     }
 
     componentDidMount() {
-        fetch("../../list.json")
+        fetch("./list.json")
             .then(res => res.json())
             .then(
                 (result) => {
+                    console.log('111', result);
                     this.setState({
                         isLoaded: true,
-                        items: result.items
+                        items: result
                     });
                 },
                 (error) => {
@@ -37,8 +38,8 @@ export class PageWrapper extends React.Component {
 
     render() {
         
-        console.log(data[0]);
-        // console.log(this.state);
+        // console.log(data[0]);
+        console.log(this.state);
 
         return <div className={s.page_wrapper}>
             <Header />
