@@ -1,15 +1,12 @@
 .page_wrapper {
-    border: 1px solid red;
     background-color: #ffffff;
     width: 80%;
 }
 .header {
-    border: 1px solid red;
     margin: 15px;
     text-align: left;
 }
 .cards_list {
-    border: 1px solid red;
     margin: 15px;
     display: flex;
     flex-flow: row wrap;
@@ -18,7 +15,6 @@
 }
 /* TESTING MOCKUP CARD */
 .card_test {
-    border: 1px solid red;
     flex: 0 1 25%;
     display: grid;
     grid-template-areas:
@@ -26,14 +22,12 @@
     grid-template-row 1fr;
 }
 .img_test {
-    border: 1px solid red;
     margin: 5px;
     grid-area: pic;
 }
 
 /* SINGLE CARD STYLES */
 .card {
-    border: 1px solid red;
     padding: 1.5vw;
     flex: 0 1 25%;
     display: grid;
@@ -49,7 +43,6 @@
 }
 
 .img_block {
-    border: 1px solid red;
     margin-bottom: 20px;
     grid-area: pic;
 }
@@ -65,7 +58,8 @@
 
 .title {
     grid-area: title;
-    font-size: 1.05vw;
+    font-size: 1.2vw;
+    text-align: left;
 }
 
 .date_from {
@@ -85,6 +79,7 @@
 }
 .price {
     grid-area: price;
+    font-size: 1.6vw;
 }
 
 /* PAGINATION STYLES */

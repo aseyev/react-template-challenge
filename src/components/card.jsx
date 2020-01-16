@@ -18,7 +18,7 @@ let Card = (props) => {
         <StarRating props={data.vote} />
 
         <div className={s.price}>
-            {data.price}
+            {`฿${data.price.toFixed(2)}`}
         </div>
 
     </div>
@@ -33,22 +33,36 @@ let TimePassed = (props) => {
     let data = props.props;
     let now = new Date();
     let fromJson = new Date(data);
-    const diffDays = Math.floor((now - fromJson)/86400000);
-    
-    return <div className={s.date_from}>
-        {`Posted ${diffDays} Days ago`}
-    </div>
-}
+    const diffDays = Math.floor((now - fromJson) / 86400000);
 
-let StarRating = (props) => {
-    const stars = [];
-    for (let i = 0; i < 5; i++) {
-        let starColor = () => i < props.props ? s.red : s.gray;
-        stars.push(<div className={starColor()}>&#9733;</div>);
+    let periodSwitch = (counter) => {
+        if (counter / 365 > 1) { return "More than 1 year ago" }
+        else {
+            if (counter / 30 > 1) { return "More than 1 month ago" }
+            else {
+                if (counter / 7 > 1) { return "More than 1 week ago" }
+                else {
+                    if (counter === 0) { return "Posted today" }
+                    else {return "Out of Date" }
+                    }
+                }
+            }
+        }
+        return <div className={s.date_from}>
+            {periodSwitch(diffDays)}
+        </div>
     }
-    return <div className={s.rating}>
-        {stars}
-    </div>
-}
+    
 
-export default Card;
+    let StarRating = (props) => {
+        const stars = [];
+        for (let i = 0; i < 5; i++) {
+            let starColor = () => i < props.props ? s.red : s.gray;
+            stars.push(<div className={starColor()}>&#9733;</div>);
+        }
+        return <div className={s.rating}>
+            {stars}
+        </div>
+    }
+
+    export default Card;
