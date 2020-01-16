@@ -1,0 +1,107 @@
+.page_wrapper {
+    border: 1px solid red;
+    background-color: #ffffff;
+    width: 80%;
+}
+.header {
+    border: 1px solid red;
+    margin: 15px;
+    text-align: left;
+}
+.cards_list {
+    border: 1px solid red;
+    margin: 15px;
+    display: flex;
+    flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+/* TESTING MOCKUP CARD */
+.card_test {
+    border: 1px solid red;
+    flex: 0 1 25%;
+    display: grid;
+    grid-template-areas:
+        "pic"
+    grid-template-row 1fr;
+}
+.img_test {
+    border: 1px solid red;
+    margin: 5px;
+    grid-area: pic;
+}
+
+/* SINGLE CARD STYLES */
+.card {
+    border: 1px solid red;
+    padding: 15px;
+    flex: 0 1 25%;
+    display: grid;
+    grid-template-areas:
+        "pic"
+        "title"
+        "date"
+        "rate"
+        "price";
+    grid-template-rows: 11fr 3fr 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.img_block {
+    border: 1px solid red;
+    margin: 5px;
+    grid-area: pic;
+}
+.img_block img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    border: 1px solid red;
+    margin: 5px;
+    grid-area: title;
+}
+
+.date_from {
+    border: 1px solid red;
+    margin: 5px;
+    grid-area: date;
+
+}
+
+.rating {
+    border: 1px solid red;
+    margin: 5px;
+    grid-area: rate;
+
+}
+
+.price {
+    border: 1px solid red;
+    margin: 5px;
+    grid-area: price;
+}
+
+/* PAGINATION STYLES */
+.paginator {
+    margin: 5px;
+}
+.button,
+.button_current,
+.button_next {
+    display: inline-block;
+    width: 3vw;
+    height: 3vw;
+    margin: 5px;
+}
+.button {
+    background-color: pink;
+}
+.button_current {
+    background-color: red;
+}
+.button_next {
+    background-color: grey;
+    color: white;
+}
