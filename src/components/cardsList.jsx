@@ -4,10 +4,10 @@ import Card from './card';
 import CardTest from './cardTest';
 
 let CardsList = (props) => {
-    console.log(props);
-    console.log(props.props);
+    // console.log(props);
+    // console.log(props.props);
     return <div className={s.cards_list}>
-        <Card props={props}/>
+        <Card/>
         <Card/>
         <CardTest/>
         <CardTest/>
