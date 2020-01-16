@@ -8,7 +8,7 @@ let CardsList = (props) => {
     let  cardsListing = data.map(p => <Card props={p} />);
 
     return <div className={s.cards_list}>
-        <CardTest/>
+        {/* <CardTest/> */}
         {cardsListing}
     </div>
     
