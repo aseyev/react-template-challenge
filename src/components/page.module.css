@@ -44,8 +44,9 @@
 }
 
 .img_block {
-    margin-bottom: 20px;
+    margin-bottom: 1.6vw;
     grid-area: pic;
+    background-color: rgb(209, 206, 206);
 }
 .img_block img{
     height: 100%;
@@ -61,6 +62,7 @@
     grid-area: title;
     font-size: 1.2vw;
     text-align: left;
+    max-height: 8vw;
 }
 
 .date_from {
@@ -149,12 +151,13 @@
         flex: 0 1 100%;
     }
     .title {
-        font-size: 4.8vw;
+        font-size: 4vw;
+        max-height: 10vw;
     }
     .rating {
         font-size: 8vw;
     }
     .price {
-        font-size: 6.4vw;
+        font-size: 6vw;
     }
 }
