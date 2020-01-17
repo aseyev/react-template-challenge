@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './page.module.css';
 
+//Single Card 
 let Card = (props) => {
 
     let data = props.props;
@@ -29,6 +30,7 @@ let Picture = (props) => {
     </div>
 }
 
+// Counts a Day gap between loading and now, and chooses a phrase
 let TimePassed = (props) => {
     let data = props.props;
     let now = new Date();
@@ -53,11 +55,12 @@ let TimePassed = (props) => {
         </div>
     }
     
-
+// Forms JSX from an array of correctly colored stars
     let StarRating = (props) => {
         const stars = [];
+        let rating = props.props
         for (let i = 0; i < 5; i++) {
-            let starColor = () => i < props.props ? s.red : s.gray;
+            let starColor = () => i < rating ? s.red : s.gray;
             stars.push(<div className={starColor()}>&#9733;</div>);
         }
         return <div className={s.rating}>

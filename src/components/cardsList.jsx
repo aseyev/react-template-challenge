@@ -3,6 +3,7 @@ import s from './page.module.css';
 import Card from './card';
 import CardTest from './cardTest';
 
+// maps ana array from Cards
 let CardsList = (props) => {
     let data=props.props;
     let  cardsListing = data.map(p => <Card props={p} />);

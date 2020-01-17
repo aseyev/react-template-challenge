@@ -15,7 +15,7 @@ export class PageWrapper extends React.Component {
             items: []
         };
     }
-
+//Async loading JSON from server to local state 
     componentDidMount() {
         fetch("./list.json")
             .then(res => res.json())
@@ -34,7 +34,8 @@ export class PageWrapper extends React.Component {
                 }
             )
     }
-
+//Show preloader svg on screen until data not downloaded
+//Prevents unneccessary rerenders of children components 
     render() {
         if ( !this.state.isLoaded ) {
             return <PreloaderCircle />
