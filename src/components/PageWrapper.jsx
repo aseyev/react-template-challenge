@@ -17,7 +17,7 @@ export class PageWrapper extends React.Component {
     }
 //Async loading JSON from server to local state 
     componentDidMount() {
-        fetch("./list.json")
+        fetch("./list_ext.json")
             .then(res => res.json())
             .then(
                 (result) => {

@@ -1,0 +1,290 @@
+[
+    {
+        "id": 1,
+        "title": "Example of Web-Store / E-Shop Template page. Whole data for cards are downloaded in JSON by async server request.",
+        "vote": 5,
+        "price": 200,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 2,
+        "title": "By the way, webpage's flexibility and responsibility is active for any kind of devices",
+        "vote": 4,
+        "price": 1220,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 3,
+        "title": "This JSON downloads images from incredibly slow image hosting, don't worry it's free and good for testing.",
+        "vote": 3,
+        "price": 500,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 4,
+        "title": "Main Point of this template is to make it more stable for different data input/download",
+        "vote": 2,
+        "price": 600,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 5,
+        "title": "This title should have less than 30 symbols in each line, 3 lines summary, about 90 symbols.",
+        "vote": 1,
+        "price": 700,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 6,
+        "title": "SoHereWillBeSomeExamplesOfDifferentKindOfWrongDataFormats.LikeAStringWithNoSpaces,ForExample",
+        "vote": 0,
+        "price": 800,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 7,
+        "title": "3 Ways You Can Reinvent ACE-SN Without Looking Like An Amateur",
+        "vote": 5,
+        "price": 8800,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 8,
+        "title": "How To Make More ACE-SN By Doing Less",
+        "vote": 5,
+        "price": 4200,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 9,
+        "title": "11 Methods Of ACE-SN Domination",
+        "vote": 0,
+        "price": 15100,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 10,
+        "title": "What Is ACE-SN and How Does It Work?",
+        "vote": 1,
+        "price": 1235200,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 11,
+        "title": "ACE-SN Smackdown!",
+        "vote": 0,
+        "price": 6,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 12,
+        "title": "5 Ways ACE-SN Will Help You Get More Business",
+        "vote": 2,
+        "price": 10,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-18 22:01:15"
+    },
+    {
+        "id": 13,
+        "title": "Get Rid of ACE-SN For Good",
+        "vote": 5,
+        "price": 200,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 14,
+        "title": "Now You Can Check An App That is Made For ACE-SN",
+        "vote": 4,
+        "price": 1220,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 15,
+        "title": "The Ultimate Deal On ACE-SN",
+        "vote": 3,
+        "price": 500,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 16,
+        "title": "Improve(Increase) Your ACE-SN In 3 Days",
+        "vote": 2,
+        "price": 600,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 17,
+        "title": "27 Ways To Improve ACE-SN",
+        "vote": 1,
+        "price": 700,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 18,
+        "title": "Avoid The Top 10 Mistakes Made By Beginning ACE-SN",
+        "vote": 0,
+        "price": 800,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 19,
+        "title": "3 Ways You Can Reinvent ACE-SN Without Looking Like An Amateur",
+        "vote": 5,
+        "price": 8800,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 20,
+        "title": "How To Make More ACE-SN By Doing Less",
+        "vote": 5,
+        "price": 4200,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 21,
+        "title": "11 Methods Of ACE-SN Domination",
+        "vote": 0,
+        "price": 15100,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 22,
+        "title": "What Is ACE-SN and How Does It Work?",
+        "vote": 1,
+        "price": 1235200,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 23,
+        "title": "ACE-SN Smackdown!",
+        "vote": 0,
+        "price": 6,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 24,
+        "title": "5 Ways ACE-SN Will Help You Get More Business",
+        "vote": 2,
+        "price": 10,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-18 22:01:15"
+    },
+    {
+        "id": 25,
+        "title": "Get Rid of ACE-SN For Good",
+        "vote": 5,
+        "price": 200,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 26,
+        "title": "Now You Can Check An App That is Made For ACE-SN",
+        "vote": 4,
+        "price": 1220,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 27,
+        "title": "The Ultimate Deal On ACE-SN",
+        "vote": 3,
+        "price": 500,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 28,
+        "title": "Improve(Increase) Your ACE-SN In 3 Days",
+        "vote": 2,
+        "price": 600,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 29,
+        "title": "27 Ways To Improve ACE-SN",
+        "vote": 1,
+        "price": 700,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 30,
+        "title": "Avoid The Top 10 Mistakes Made By Beginning ACE-SN",
+        "vote": 0,
+        "price": 800,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 31,
+        "title": "3 Ways You Can Reinvent ACE-SN Without Looking Like An Amateur",
+        "vote": 5,
+        "price": 8800,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 32,
+        "title": "How To Make More ACE-SN By Doing Less",
+        "vote": 5,
+        "price": 4200,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 33,
+        "title": "11 Methods Of ACE-SN Domination",
+        "vote": 0,
+        "price": 15100,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 34,
+        "title": "What Is ACE-SN and How Does It Work?",
+        "vote": 1,
+        "price": 1235200,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 35,
+        "title": "ACE-SN Smackdown!",
+        "vote": 0,
+        "price": 6,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-08 17:01:15"
+    },
+    {
+        "id": 36,
+        "title": "5 Ways ACE-SN Will Help You Get More Business",
+        "vote": 2,
+        "price": 10,
+        "image_url": "http://lorempixel.com/320/240?random1",
+        "created_at": "2018-12-18 22:01:15"
+    }
+]

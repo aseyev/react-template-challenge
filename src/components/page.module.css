@@ -55,7 +55,10 @@
 .title, .date_from, .rating, .price {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
+    text-overflow: ellipsis;
+    min-width: 0;
+    border: 1px solid red;
+
 }
 
 .title {
@@ -63,6 +66,10 @@
     font-size: 1.2vw;
     text-align: left;
     max-height: 8vw;
+}
+/* not working */
+.title div{
+    text-overflow: ellipsis; 
 }
 
 .date_from {
@@ -123,7 +130,7 @@
         flex: 0 1 33%;
     }
     .title {
-        font-size: 1.8vw;
+        font-size: 1.6vw;
     }
     .rating {
         font-size: 3vw;
@@ -137,7 +144,7 @@
         flex: 0 1 50%;
     }
     .title {
-        font-size: 2.4vw;
+        font-size: 2.2vw;
     }
     .rating {
         font-size: 4vw;
@@ -151,7 +158,7 @@
         flex: 0 1 100%;
     }
     .title {
-        font-size: 4vw;
+        font-size: 3.5vw;
         max-height: 10vw;
     }
     .rating {

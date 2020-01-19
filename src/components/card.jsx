@@ -10,9 +10,7 @@ let Card = (props) => {
 
         <Picture props={data.image_url} />
 
-        <div className={s.title}>
-            {data.title}
-        </div>
+        <TitleFormatted props={data.title} />
 
         <TimePassed props={data.created_at} />
 
@@ -27,6 +25,15 @@ let Card = (props) => {
 let Picture = (props) => {
     return <div className={s.img_block}>
         <img className={s.img} src={props.props} alt="loading" />
+    </div>
+}
+let TitleFormatted = (props) => {
+    let titleLoaded = props.props;
+    let titleFormat = titleLoaded;
+    let maxL = 88;
+    if (titleLoaded.length > maxL) {titleFormat = titleLoaded.slice(0, maxL-3)+'...'}
+    return <div className={s.title}>
+        {titleFormat}
     </div>
 }
 
