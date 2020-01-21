@@ -1,9 +1,9 @@
 import React from 'react';
-import Paginator from './paginator';
+import Paginator from './common/paginator';
 import Header from './header';
 import CardsList from './cardsList';
 import s from './page.module.css';
-import PreloaderCircle from "./PreloaderCircle";
+import PreloaderCircle from "./common/PreloaderCircle";
 
 export class PageWrapper extends React.Component {
 
@@ -12,7 +12,10 @@ export class PageWrapper extends React.Component {
         this.state = {
             error: null,
             isLoaded: false,
-            items: []
+            cards: [],
+            currentPageNumber: 1,
+            cardsOnPage: 4,
+            cardsAllQuantity: 0,
         };
     }
 //Async loading JSON from server to local state 
@@ -23,7 +26,8 @@ export class PageWrapper extends React.Component {
                 (result) => {
                     this.setState({
                         isLoaded: true,
-                        items: result
+                        cards: result,
+                        cardsAllQuantity: result.length
                     });
                 },
                 (error) => {
@@ -40,12 +44,20 @@ export class PageWrapper extends React.Component {
         if ( !this.state.isLoaded ) {
             return <PreloaderCircle />
         }
+        let iMinOnPage = (this.state.currentPageNumber - 1) * this.state.cardsOnPage;
+        let iMaxOnPage = (this.state.currentPageNumber * this.state.cardsOnPage) - 1;
+        if (iMaxOnPage>this.state.cardsAllQuantity) iMaxOnPage = this.state.cardsAllQuantity-1;
+
+        let lastPageNumber = Math.ceil(this.state.cardsAllQuantity / this.state.cardsOnPage);
+        let cardsForPage = this.state.cards.slice(iMinOnPage,iMaxOnPage+1)
 
         console.log(this.state);
+        console.log(cardsForPage);
+        console.log(iMinOnPage,' ',iMaxOnPage,' ',lastPageNumber );
 
         return <div className={s.page_wrapper}>
-            <Header />
-            <CardsList props={this.state.items}/>
+            <Header iMinOnPage={iMinOnPage} iMaxOnPage={iMaxOnPage} cardsAllQuantity={this.state.cardsAllQuantity}/>
+            <CardsList cardsForPage={cardsForPage}/>
             <Paginator />
         </div>
     }

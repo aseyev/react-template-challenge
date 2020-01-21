@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Example of Web-Store / E-Shop Template page. Whole data for cards are downloaded in JSON by async server request.",
+        "title": "Example of E-Shop Template page form. All cards data are downloaded by fetch async request from server.",
         "vote": 5,
         "price": 200,
         "image_url": "http://lorempixel.com/320/240?random1",
@@ -12,7 +12,7 @@
         "title": "By the way, webpage's flexibility and responsibility is active for any kind of devices",
         "vote": 4,
         "price": 1220,
-        "image_url": "http://lorempixel.com/320/240?random1",
+        "image_url": "http://lorempixel.com/320/240?random3",
         "created_at": "2018-12-08 17:01:15"
     },
     {
@@ -20,15 +20,15 @@
         "title": "This JSON downloads images from incredibly slow image hosting, don't worry it's free and good for testing.",
         "vote": 3,
         "price": 500,
-        "image_url": "http://lorempixel.com/320/240?random1",
+        "image_url": "http://lorempixel.com/320/240?random5",
         "created_at": "2018-12-08 17:01:15"
     },
     {
         "id": 4,
-        "title": "Main Point of this template is to make it more stable for different data input/download",
+        "title": "Main Point of this template is to make it more stable for different data values download",
         "vote": 2,
         "price": 600,
-        "image_url": "http://lorempixel.com/320/240?random1",
+        "image_url": "http://lorempixel.com/320/240?random7",
         "created_at": "2018-12-08 17:01:15"
     },
     {

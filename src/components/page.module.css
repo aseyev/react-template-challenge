@@ -3,12 +3,13 @@
     width: 80%;
 }
 .header {
-    margin: 25px 50px;
+    margin: 1.5vw 3vw 0 3vw;
     text-align: left;
     border-bottom: 1px solid rgb(179, 179, 179);
 }
 .cards_list {
-    margin: 15px;
+    margin: 0 1.5vw;
+    /* margin-bottom: 0; */
     display: flex;
     flex-flow: row wrap;
 	justify-content: center;
@@ -23,7 +24,7 @@
     grid-template-row 1fr;
 }
 .img_test {
-    margin: 5px;
+    margin: 0.5vw;
     grid-area: pic;
 }
 
@@ -39,8 +40,8 @@
         "rate"
         "price";
     grid-template-rows: 10fr 2fr 1fr 1.2fr 1.5fr;
-    /* grid-template-rows: 55% 15% 5% 10% 5%; */
-    /* grid-template-columns: 1fr; */
+    min-width: 150px;
+    min-height: 360px;
 }
 
 .img_block {
@@ -52,12 +53,14 @@
     height: 100%;
     object-fit: cover;
 }
-.title, .date_from, .rating, .price {
+.paginator,
+.title, .date_from, .rating, .rating p, .price {
     display: flex;
     justify-content: flex-start;
-    text-overflow: ellipsis;
+    align-items: flex-end;
     min-width: 0;
-    border: 1px solid red;
+    /* text-overflow: ellipsis; */
+    /* border: 1px solid red; */
 
 }
 
@@ -94,7 +97,7 @@
 
 /* PAGINATION STYLES */
 .paginator {
-    margin: 5px;
+    margin: 0.5vw;
     display: flex;
     justify-content: center;
 }
@@ -105,7 +108,9 @@
     justify-content: center;
     align-items: center;
     width: 3vw;
+    min-width: 40px;
     height: 3vw;
+    min-height: 40px;
     margin: 5px;
 }
 .button {

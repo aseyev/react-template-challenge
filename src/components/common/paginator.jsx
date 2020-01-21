@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './page.module.css';
+import s from './../page.module.css';
 
 let Paginator = ({pages=2, currentPage=1}) => {
     return <div className={s.paginator}>

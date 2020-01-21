@@ -3,7 +3,7 @@ import s from './page.module.css';
 
 let Header = (props) => {
     return <div className={s.header}>
-        <p>1-12 from 23</p>
+        <p>{`${props.iMinOnPage + 1} - ${props.iMaxOnPage + 1} from ${props.cardsAllQuantity}`}</p>
     </div>
     
 }
