@@ -7,7 +7,7 @@ import CardTest from './cardTest';
 // maps ana array from Cards
 let CardsList = (props) => {
     let data=props.cardsForPage;
-    let  cardsListing = data.map(p => <Card props={p} />);
+    let  cardsListing = data.map((p, key) => <Card key={key} props={p} />);
 
     return <div className={s.cards_list}>
         {/* <CardTest/> */}
@@ -15,5 +15,4 @@ let CardsList = (props) => {
     </div>
     
 }
-
 export default CardsList;

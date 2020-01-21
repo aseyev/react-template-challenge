@@ -23,29 +23,39 @@ let Card = (props) => {
 
     </div>
 }
-let Picture = (props) => {
-    const [loading, setLoading] = useState(false);
+
+const Picture = (props) => {
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        debugger
-        fetch(props.url)
+        fetch(props.url, {
+            headers: {
+                'Content-Type': 'image/png',
+                // 'Access-Control-Allow-Origin': '*'
+            },
+            // mode: "cors",
+            // redirect: "follow"
+        })
             .then(resp => {
                 debugger
-                if (resp.status >= 200 && resp.status < 300) {
-                    setLoading(true);
+                if (resp.ok) {
+                    setLoading(false);
                 }
             })
             .catch(err => {
                 console.log(err)
             })
-    }, [])
+    }, [props.url])
 
     return (
         <>
             <div className={s.img_block}>
-                {loading ?
-                        <PreloaderCircle />
-                    :
+                {
+                    loading &&
+                    <PreloaderCircle />
+                }
+                {
+                    !loading &&
                     <img className={s.img} src={props.url} alt="lorempixel" />
                 }
             </div>
@@ -89,16 +99,15 @@ let TimePassed = (props) => {
 }
 
 // Forms JSX from an array of correctly colored stars
-let StarRating = (props) => {
+const StarRating = (props) => {
     const stars = [];
     let rating = props.props
     for (let i = 0; i < 5; i++) {
         let starColor = () => i < rating ? s.red : s.gray;
-        stars.push(<div className={starColor()}>&#9733;</div>);
+        stars.push(<div key={i} className={starColor()}>&#9733;</div>);
     }
     return <div className={s.rating}>
         {stars}
     </div>
 }
-
 export default Card;
