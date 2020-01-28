@@ -13,8 +13,8 @@ export class PageWrapper extends React.Component {
             error: null,
             isLoaded: false,
             cards: [],
-            currentPageNumber: 5,
-            cardsOnPage: 4,
+            currentPageNumber: 1,
+            cardsOnPage: 12,
             cardsAllQuantity: 0,
         };
     }
