@@ -2,11 +2,11 @@ import React from 'react';
 import s from './page.module.css';
 
 //Single Card 
-let Card = (props) => {
+const Card = (props) => {
 
     let data = props.props;
 
-    return <div className={s.card}>
+    return <div className={s.card} key={props.id} onMouseOver={props.onMouseOver}>
 
         <Picture url={data.image_url} />
 
@@ -22,14 +22,14 @@ let Card = (props) => {
 
     </div>
 }
-let Picture = (props) => {
+const Picture = (props) => {
 
     return <div className={s.img_block}>
         <img className={s.img} src={props.url} alt="loading" />
         {/* <img src={user.photos.small != null ? user.photos.small : userTemplatePic} alt={user.name} /> */}
     </div>
 }
-let TitleFormatted = (props) => {
+const TitleFormatted = (props) => {
     let titleLoaded = props.props;
     let titleFormat = titleLoaded;
     let maxL = 88;
@@ -40,13 +40,13 @@ let TitleFormatted = (props) => {
 }
 
 // Counts a Day gap between loading and now, and chooses a phrase
-let TimePassed = (props) => {
+const TimePassed = (props) => {
     let data = props.props;
     let now = new Date();
     let fromJson = new Date(data);
     const diffDays = Math.floor((now - fromJson) / 86400000);
 
-    let periodSwitch = (counter) => {
+    const periodSwitch = (counter) => {
         if (counter / 365 > 1) { return "More than 1 year ago" }
         else {
             if (counter / 30 > 1) { return "More than 1 month ago" }
@@ -65,12 +65,12 @@ let TimePassed = (props) => {
     }
     
 // Forms JSX from an array of correctly colored stars
-    let StarRating = (props) => {
+    const StarRating = (props) => {
         const stars = [];
         let rating = props.props
         for (let i = 0; i < 5; i++) {
-            let starColor = () => i < rating ? s.red : s.gray;
-            stars.push(<div className={starColor()}>&#9733;</div>);
+            const starColor = () => i < rating ? s.red : s.gray;
+            stars.push(<div className={starColor()}  key={i} >&#9733;</div>);
         }
         return <div className={s.rating}>
             {stars}

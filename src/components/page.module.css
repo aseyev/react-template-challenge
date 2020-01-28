@@ -30,6 +30,7 @@
 
 /* SINGLE CARD STYLES */
 .card {
+    background-color: #ffffff;
     padding: 1.5vw;
     flex: 0 1 25%;
     display: grid;
@@ -42,6 +43,13 @@
     grid-template-rows: 10fr 2fr 1fr 1.2fr 1.5fr;
     min-width: 150px;
     min-height: 360px;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgb(194, 194, 194);
+    transform: scale(1.03, 1.03);
+    z-index: 1;
+    transition-duration: 200ms;
 }
 
 .img_block {

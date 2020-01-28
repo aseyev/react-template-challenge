@@ -9,7 +9,7 @@
   justify-content: flex-start;
   font-size: 1.1vw;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .App {
       font-size: 1.65vw;
   }

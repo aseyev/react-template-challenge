@@ -13,10 +13,15 @@ export class PageWrapper extends React.Component {
             error: null,
             isLoaded: false,
             cards: [],
-            currentPageNumber: 1,
-            cardsOnPage: 4,
+            currentPageNumber: 3,
+            cardsOnPage: 8,
             cardsAllQuantity: 0,
         };
+    }
+    setCurrentPage = (newCurrentPage) => {
+        this.setState({
+            currentPageNumber: newCurrentPage
+        })
     }
 //Async loading JSON from server to local state 
     componentDidMount() {
@@ -51,14 +56,17 @@ export class PageWrapper extends React.Component {
         let lastPageNumber = Math.ceil(this.state.cardsAllQuantity / this.state.cardsOnPage);
         let cardsForPage = this.state.cards.slice(iMinOnPage,iMaxOnPage+1)
 
-        console.log(this.state);
-        console.log(cardsForPage);
-        console.log(iMinOnPage,' ',iMaxOnPage,' ',lastPageNumber );
+        // console.log(this.state);
+        // console.log(cardsForPage);
+        console.log('first element\'s id on page ',iMinOnPage,', last element\'s id on page ',iMaxOnPage);
+        console.log('pages quantity ',lastPageNumber, ', current page ', this.state.currentPageNumber);
 
         return <div className={s.page_wrapper}>
             <Header iMinOnPage={iMinOnPage} iMaxOnPage={iMaxOnPage} cardsAllQuantity={this.state.cardsAllQuantity}/>
             <CardsList cardsForPage={cardsForPage}/>
-            <Paginator />
+            <Paginator lastPage={lastPageNumber} 
+                currentPage={this.state.currentPageNumber} 
+                setCurrentPage={this.setCurrentPage}/>
         </div>
     }
 }
