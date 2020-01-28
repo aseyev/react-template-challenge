@@ -3,7 +3,9 @@ import s from "./../page.module.css";
 
 let Paginator = ({ lastPage = 2, currentPage = 1, setCurrentPage }) => {
     const [arrNumbers, setArrNumbers] = useState([]);
-    const [buttonsQ, setButtonsQ] = useState(9);
+
+    //THIS STATE for setting pages quantity in pagination
+    const [buttonsQ, setButtonsQ] = useState(5);
 
     useEffect(() => {
         if (buttonsQ < 3 || buttonsQ > 9 || buttonsQ%2===0) {setButtonsQ(5)}
@@ -25,18 +27,22 @@ let Paginator = ({ lastPage = 2, currentPage = 1, setCurrentPage }) => {
     }, [currentPage, lastPage, buttonsQ ]);
     //CONTROL
     console.log('arrNumbers ', arrNumbers); 
-    let arrButtons = arrNumbers.map((button, i) => {return (
-        <div>{button[i]}</div>
-        )
+    const arrButtons = arrNumbers.map((button, key) => {
+        let currentStyle = null
+        button === currentPage ? currentStyle = s.button_current : currentStyle = s.button
+        return ( 
+            <div className={currentStyle} key={key} onClick={()=>setCurrentPage(button)} >
+                {button}
+            </div>
+        ) 
+
     } )
     console.log('arrButtons ', arrButtons); 
     return (
         <div className={s.paginator}>
-            <div className={s.button_current}>1</div>
-            <div className={s.button}>2</div>
-            <div className={s.button_next}>></div>
+            {arrButtons}
         </div>
     );
-};
+}; 
 
 export default Paginator;

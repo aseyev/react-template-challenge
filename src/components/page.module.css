@@ -40,9 +40,9 @@
         "date"
         "rate"
         "price";
-    grid-template-rows: 10fr 2fr 1fr 1.2fr 1.5fr;
-    min-width: 150px;
-    min-height: 360px;
+    grid-template-rows: 10fr 2.2fr 1fr 1.2fr 1.5fr;
+    min-width: 0px;
+    min-height: 0px;
 }
 
 .card:hover {
@@ -53,8 +53,9 @@
 }
 
 .img_block {
-    margin-bottom: 1.6vw;
+    margin-bottom: 1.4vw;
     grid-area: pic;
+    min-height: 18vw;
     background-color: rgb(209, 206, 206);
 }
 .img_block img{
@@ -77,6 +78,7 @@
     font-size: 1.2vw;
     text-align: left;
     max-height: 8vw;
+    min-height: 4.6vw;
 }
 /* not working */
 .title div{
@@ -105,7 +107,7 @@
 
 /* PAGINATION STYLES */
 .paginator {
-    margin: 0.5vw;
+    margin: 1.5vw 0.5vw;
     display: flex;
     justify-content: center;
 }
@@ -138,9 +140,15 @@
     margin: auto;
     min-height: 100%;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+    .page_wrapper {
+        width: 95%;
+    }
     .card {
         flex: 0 1 33%;
+    }
+    .img_block {
+        min-height: 35vw;
     }
     .title {
         font-size: 1.6vw;
@@ -153,8 +161,14 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .page_wrapper {
+        width: 100%;
+    }
     .card {
         flex: 0 1 50%;
+    }
+    .img_block {
+        min-height: 55vw;
     }
     .title {
         font-size: 2.2vw;
@@ -166,9 +180,12 @@
         font-size: 3.2vw;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
     .card,.card_test {
         flex: 0 1 100%;
+    }
+    .img_block {
+        min-height: 110vw;
     }
     .title {
         font-size: 3.5vw;
