@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Example of E-Shop Template page form. All cards data are downloaded by fetch async request from server.",
+        "title": "Example of A-Shop Template page form. All cards data are downloaded by fetch async request from server.",
         "vote": 5,
         "price": 200,
         "image_url": "http://lorempixel.com/320/240?random1",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "title": "By the way, webpage's flexibility and responsibility is active for any kind of devices",
+        "title": "This JSON downloads images from incredibly slow image hosting, but it's good for testing, and free",
         "vote": 4,
         "price": 1220,
         "image_url": "http://lorempixel.com/320/240?random2",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "title": "This JSON downloads images from incredibly slow image hosting, but it's good for testing? and free",
+        "title": "Check out my hand-made pagination! It might be changed or extended if necessary.",
         "vote": 3,
         "price": 500,
         "image_url": "http://lorempixel.com/320/240?random1",
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "title": "Main Point of this template is to make it more stable for different data values download",
+        "title": "By the way, webpage's flexibility and responsibility is active for any kind of devices",
         "vote": 2,
         "price": 600,
         "image_url": "http://lorempixel.com/320/240?random2",
@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "title": "This title should have less than 30 symbols in each line, 3 lines summary, about 90 symbols.",
+        "title": "Main Point of this template is to make it more stable for different data values download",
         "vote": 1,
         "price": 700,
         "image_url": "http://lorempixel.com/320/240?random1",
@@ -41,7 +41,7 @@
     },
     {
         "id": 6,
-        "title": "SoHereWillBeSomeExamplesOfDifferentKindOfWrongDataFormats.LikeAStringWithNoSpaces,ForExample",
+        "title": "This title should have less than 30 symbols in each line, 3 lines summary, about 90 symbols.",
         "vote": 0,
         "price": 800,
         "image_url": "http://lorempixel.com/320/240?random1",
@@ -49,7 +49,7 @@
     },
     {
         "id": 7,
-        "title": "3 Ways You Can Reinvent ACE-SN Without Looking Like An Amateur",
+        "title": "SoHereWillBeSomeExamplesOf DifferentKindOfWrongDataFormats. LikeAStringWithNoSpaces,ForExample",
         "vote": 5,
         "price": 8800,
         "image_url": "http://lorempixel.com/320/240?random1",
@@ -57,7 +57,7 @@
     },
     {
         "id": 8,
-        "title": "How To Make More ACE-SN By Doing Less",
+        "title": "Async fetch request is preceded by the preloader.svg, and cards are filled after it's downloading",
         "vote": 5,
         "price": 4200,
         "image_url": "http://lorempixel.com/320/240?random1",
@@ -65,7 +65,7 @@
     },
     {
         "id": 9,
-        "title": "11 Methods Of ACE-SN Domination",
+        "title": "Quantity of cards on the page can be set manually",
         "vote": 0,
         "price": 15100,
         "image_url": "http://lorempixel.com/320/240?random1",

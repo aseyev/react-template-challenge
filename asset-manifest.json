@@ -1,24 +1,23 @@
 {
   "files": {
     "main.css": "/react-template-challenge/static/css/main.0a147e12.chunk.css",
-    "main.js": "/react-template-challenge/static/js/main.be182f0c.chunk.js",
-    "main.js.map": "/react-template-challenge/static/js/main.be182f0c.chunk.js.map",
+    "main.js": "/react-template-challenge/static/js/main.22f8b73f.chunk.js",
+    "main.js.map": "/react-template-challenge/static/js/main.22f8b73f.chunk.js.map",
     "runtime-main.js": "/react-template-challenge/static/js/runtime-main.2c1de777.js",
     "runtime-main.js.map": "/react-template-challenge/static/js/runtime-main.2c1de777.js.map",
-    "static/js/2.7fccfb73.chunk.js": "/react-template-challenge/static/js/2.7fccfb73.chunk.js",
-    "static/js/2.7fccfb73.chunk.js.map": "/react-template-challenge/static/js/2.7fccfb73.chunk.js.map",
+    "static/js/2.8f7d9c2d.chunk.js": "/react-template-challenge/static/js/2.8f7d9c2d.chunk.js",
+    "static/js/2.8f7d9c2d.chunk.js.map": "/react-template-challenge/static/js/2.8f7d9c2d.chunk.js.map",
     "index.html": "/react-template-challenge/index.html",
-    "precache-manifest.3bc04fd3a419e628ef95ba6d84aedbd9.js": "/react-template-challenge/precache-manifest.3bc04fd3a419e628ef95ba6d84aedbd9.js",
+    "precache-manifest.56501a5818326d90d30565c3f80f6ef8.js": "/react-template-challenge/precache-manifest.56501a5818326d90d30565c3f80f6ef8.js",
     "service-worker.js": "/react-template-challenge/service-worker.js",
     "static/css/main.0a147e12.chunk.css.map": "/react-template-challenge/static/css/main.0a147e12.chunk.css.map",
-    "static/js/2.7fccfb73.chunk.js.LICENSE": "/react-template-challenge/static/js/2.7fccfb73.chunk.js.LICENSE",
-    "static/media/circlesСircle.svg": "/react-template-challenge/static/media/circlesСircle.78eb393d.svg",
-    "static/media/mockup-card.jpg": "/react-template-challenge/static/media/mockup-card.9c3e8757.jpg"
+    "static/js/2.8f7d9c2d.chunk.js.LICENSE": "/react-template-challenge/static/js/2.8f7d9c2d.chunk.js.LICENSE",
+    "static/media/circlesСircle.svg": "/react-template-challenge/static/media/circlesСircle.78eb393d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2c1de777.js",
-    "static/js/2.7fccfb73.chunk.js",
+    "static/js/2.8f7d9c2d.chunk.js",
     "static/css/main.0a147e12.chunk.css",
-    "static/js/main.be182f0c.chunk.js"
+    "static/js/main.22f8b73f.chunk.js"
   ]
 }
