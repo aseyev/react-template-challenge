@@ -58,8 +58,8 @@ export class PageWrapper extends React.Component {
 
         // console.log(this.state);
         // console.log(cardsForPage);
-        console.log('first element\'s id on page ',iMinOnPage,', last element\'s id on page ',iMaxOnPage);
-        console.log('pages quantity ',lastPageNumber, ', current page ', this.state.currentPageNumber);
+        // console.log('first element\'s id on page ',iMinOnPage,', last element\'s id on page ',iMaxOnPage);
+        // console.log('pages quantity ',lastPageNumber, ', current page ', this.state.currentPageNumber);
 
         return <div className={s.page_wrapper}>
             <Header iMinOnPage={iMinOnPage} iMaxOnPage={iMaxOnPage} cardsAllQuantity={this.state.cardsAllQuantity}/>

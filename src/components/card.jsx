@@ -26,7 +26,6 @@ const Picture = (props) => {
 
     return <div className={s.img_block}>
         <img className={s.img} src={props.url} alt="loading" />
-        {/* <img src={user.photos.small != null ? user.photos.small : userTemplatePic} alt={user.name} /> */}
     </div>
 }
 const TitleFormatted = (props) => {

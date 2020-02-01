@@ -31,7 +31,7 @@ let Paginator = ({ lastPage = 2, currentPage = 1, setCurrentPage }) => {
     }, [currentPage, lastPage, buttonsQ ]);
 
     //CONTROL
-    console.log('arrNumbers ', arrNumbers); 
+    // console.log('arrNumbers ', arrNumbers); 
     const arrButtons = arrNumbers.map((button, key) => {
         let currentStyle = null
         button === currentPage ? currentStyle = s.button_current : currentStyle = s.button
@@ -42,7 +42,7 @@ let Paginator = ({ lastPage = 2, currentPage = 1, setCurrentPage }) => {
         ) 
 
     } )
-    console.log('arrButtons ', arrButtons); 
+    // console.log('arrButtons ', arrButtons); 
     return (
         <div className={s.paginator}>
             <div className={isPrevActive ? s.button : s.button_blocked} 

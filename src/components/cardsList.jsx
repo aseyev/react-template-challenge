@@ -2,7 +2,6 @@ import React from 'react';
 import s from './page.module.css';
 import Card from './card';
 // import Card from './card backup';
-import CardTest from './cardTest';
 
 // maps ana array from Cards
 let CardsList = (props) => {
